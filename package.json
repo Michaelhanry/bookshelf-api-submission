@@ -9,7 +9,7 @@
     "lint": "eslint ./"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michael",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.50.0",
