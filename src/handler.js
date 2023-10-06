@@ -12,7 +12,6 @@ const addBookHandler = (request, h) => {
       message: 'Gagal menambahkan buku. Mohon isi nama buku',
     });
     response.code(400);
-
     return response;
   }
 
@@ -22,7 +21,6 @@ const addBookHandler = (request, h) => {
       message: 'Gagal menambahkan buku. readPage tidak boleh lebih besar dari pageCount',
     });
     response.code(400);
-
     return response;
   }
 
@@ -58,7 +56,6 @@ const addBookHandler = (request, h) => {
       },
     });
     response.code(201);
-
     return response;
   }
 
@@ -67,7 +64,6 @@ const addBookHandler = (request, h) => {
     message: 'Buku gagal ditambahkan',
   });
   response.code(500);
-
   return response;
 };
 
@@ -100,7 +96,6 @@ const getAllBooksHandler = (request, h) => {
     },
   });
   response.code(200);
-
   return response;
 };
 
@@ -122,7 +117,6 @@ const getBookByIdHandler = (request, h) => {
     message: 'Buku tidak ditemukan',
   });
   response.code(404);
-
   return response;
 };
 
@@ -141,7 +135,6 @@ const editBookByIdHandler = (request, h) => {
         message: 'Gagal memperbarui buku. Mohon isi nama buku',
       });
       response.code(400);
-
       return response;
     }
 
@@ -151,7 +144,6 @@ const editBookByIdHandler = (request, h) => {
         message: 'Gagal memperbarui buku. readPage tidak boleh lebih besar dari pageCount',
       });
       response.code(400);
-
       return response;
     }
 
@@ -176,7 +168,6 @@ const editBookByIdHandler = (request, h) => {
       message: 'Buku berhasil diperbarui',
     });
     response.code(200);
-
     return response;
   }
 
@@ -185,7 +176,6 @@ const editBookByIdHandler = (request, h) => {
     message: 'Gagal memperbarui buku. Id tidak ditemukan',
   });
   response.code(404);
-
   return response;
 };
 
@@ -201,7 +191,6 @@ const deleteBookByIdHandler = (request, h) => {
       message: 'Buku berhasil dihapus',
     });
     response.code(200);
-
     return response;
   }
 
@@ -210,7 +199,6 @@ const deleteBookByIdHandler = (request, h) => {
     message: 'Buku gagal dihapus. Id tidak ditemukan',
   });
   response.code(404);
-
   return response;
 };
 
